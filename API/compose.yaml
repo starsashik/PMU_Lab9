@@ -1,7 +1,38 @@
 ﻿services:
   api:
-    image: api
+    container_name: subtrack-api
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__MyDbContext: Host=postgres;Port=5432;Database=SubTrack;Username=postgres;Password=admin
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
 
+  postgres:
+    container_name: subtrack-postgres
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: SubTrack
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5454:5432"
+    volumes:
+      - subtrack-postgres-data:/var/lib/postgresql/data
+      - ./docker/init-scripts:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d SubTrack"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  subtrack-postgres-data:

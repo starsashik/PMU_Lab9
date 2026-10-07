@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API.csproj", "{3F8A75A5-DD3E-40A5-BC7B-864F1B73B06D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API.csproj", "{604F5E69-A325-4208-9A00-6AE9181F36CB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B93D3C6-274F-4405-9392-1277A5313534}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{245F0988-848D-4F8C-968A-90CDED3214A3}"
 	ProjectSection(SolutionItems) = preProject
 		compose.yaml = compose.yaml
 	EndProjectSection
@@ -13,9 +13,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3F8A75A5-DD3E-40A5-BC7B-864F1B73B06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F8A75A5-DD3E-40A5-BC7B-864F1B73B06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F8A75A5-DD3E-40A5-BC7B-864F1B73B06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F8A75A5-DD3E-40A5-BC7B-864F1B73B06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604F5E69-A325-4208-9A00-6AE9181F36CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604F5E69-A325-4208-9A00-6AE9181F36CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604F5E69-A325-4208-9A00-6AE9181F36CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604F5E69-A325-4208-9A00-6AE9181F36CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
