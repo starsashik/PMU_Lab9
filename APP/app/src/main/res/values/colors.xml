@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="ink">#17201D</color>
+    <color name="muted">#6C7773</color>
+    <color name="canvas">#F5F7F4</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_soft">#EAF2ED</color>
+    <color name="green">#195C45</color>
+    <color name="green_dark">#104533</color>
+    <color name="mint">#B9E4CF</color>
+    <color name="lime">#D9F29B</color>
+    <color name="orange">#E8824A</color>
+    <color name="line">#DDE4DF</color>
+    <color name="error">#BA1A1A</color>
 </resources>
