@@ -9,7 +9,8 @@ import java.util.concurrent.TimeUnit
 /** Единая точка настройки HTTP-клиента: адрес Docker API, API-ключ, таймауты и JSON-конвертер. */
 object RetrofitClient {
     // `reverseApiPort` maps this device-local port to Docker on the host.
-    private const val BASE_URL = "http://127.0.0.1:8080/"
+    private const val BASE_URL = "http://127.0.0.1:8080/"  // с впн
+    //private const val BASE_URL = "http://10.0.2.2:8080/" // без впн
     private const val API_KEY = "helpdesk-api-key"
 
     private val client = OkHttpClient.Builder()
